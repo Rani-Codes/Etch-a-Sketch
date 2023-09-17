@@ -6,8 +6,8 @@ body {
 }
 
 .gridContainer {
-    width: 550px;
-    height: 550px;
+    width: 750px;
+    height: 750px;
     border: solid black 2px;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body {
 }
 
 div {
-    border: red solid 2px;
+    border: red solid 0.5px;
     flex: auto;
 }
 
