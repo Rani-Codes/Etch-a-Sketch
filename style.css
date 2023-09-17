@@ -1,7 +1,7 @@
 .gridContainer {
-    width: 450px;
-    height: 450px;
-    border: solid blue 2px;
+    width: 550px;
+    height: 550px;
+    border: solid black 2px;
     display: flex;
     flex-direction: column;
 }
@@ -13,6 +13,5 @@
 
 div {
     border: red dotted 2px;
-    height: 20px;
     flex: auto;
 }
