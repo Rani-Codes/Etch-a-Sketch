@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .gridContainer {
     width: 550px;
     height: 550px;
@@ -12,6 +19,10 @@
 }
 
 div {
-    border: red dotted 2px;
+    border: red solid 2px;
     flex: auto;
+}
+
+.single:hover {
+    background-color: blueviolet;
 }
