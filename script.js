@@ -11,7 +11,6 @@ button.addEventListener("click", e => {
         while(gridSize < 1 || gridSize > 100) {
             gridSize = prompt("How large do you want the grid to be? Choose from 1 to 100.", 8)
         }
-        const removeGrid = gridSize;
         for (i = 0; i < gridSize; i++) {
             const rowContainer = document.createElement('div');
             rowContainer.classList.add('row');
@@ -22,9 +21,18 @@ button.addEventListener("click", e => {
                 rowContainer.append(div);
             }
         }
+        const divs = document.querySelectorAll('.single');
+        for(k = 0; k < divs.length; k++) {
+            divs[k].addEventListener("mouseenter", () => {
+                console.log("Need to figure out how to change the color of each div individually")
+            });
+        }
         timesClicked++;
     }
     else if(timesClicked >= 1) {
         location.reload();
     }
+
 })
+
+
